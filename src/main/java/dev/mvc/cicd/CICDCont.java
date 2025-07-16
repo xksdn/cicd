@@ -21,7 +21,7 @@ public class CICDCont {
     String msg = "";
 
     if (sw == -1) {
-      msg = "/cide 호출됨, error 로그";
+      msg = "/cicd 호출됨, error 로그";
       log.error(msg);
 
       try {
@@ -30,7 +30,7 @@ public class CICDCont {
         log.error(e.toString());
       }
     } else if (sw == 0) {
-      msg = "/cide 호출됨, warn 로그";
+      msg = "/cicd 호출됨, warn 로그";
       log.warn(msg);
     }else if (sw == 1) {
       msg = "/cicd 호출됨, info 로그";
